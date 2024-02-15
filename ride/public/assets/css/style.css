@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins';
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.nav-link {
+  font-family: 'Poppins';
+}
+
+.carousel-inner {
+  height: 800px;
+}
+
+.why-us {
+  padding-top: 10px;
+}
+
+.why-us .card-block {
+  padding: 50px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+}
+
+.why-us .card-block span {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ed5b5b;
+}
+
+.why-us .card-block h4 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: #191919;
+}
+
+.why-us .card-block p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.why-us .card-block:hover {
+  background: #cc1616;
+  padding: 30px 30px 70px 30px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.why-us .card-block:hover span,
+.why-us .card-block:hover h4,
+.why-us .card-block:hover p {
+  color: #fff;
+}
+
+
+
+a{
+  font-family: "Poppins"!important;
+}
+
+.contact .dbox {
+  /* color: #ffffff; */
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 60px 30px 60px 30px;
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.contact .dbox i {
+  font-size: 32px;
+  color: #cc1616;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #f5a0a0;
+}
+
+.contact .dbox h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .dbox p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+
+
+.dbox .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #cc1616;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: white;
+}
+
+
+form {
+  box-shadow: 0 0 10px rgba(214, 215, 216, 0.6);
+  margin: 20px;
+  padding: 10px;
+}
+
+
+footer {
+  background-color: #000000;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+
+
+
+
+.align {
+  text-align: left;
+  margin-top: 40px;
+}
+
+
+
+
+
+.logo {
+  /* height: 100px; */
+  width: 130px;
+}
+
+
+
+
+
+/* about us page */
+
+
+
+/* CTA CSS */
+.cta-padding35 {
+  padding: 35px 0 35px;
+  background-color: #b40028;
+  color: #fff;
+}
+
+/* Buttons */
+.site-btn {
+  font-size: 14px;
+  padding: 13px 30px;
+  border-radius: 5px;
+  border: 1px solid #b40028;
+  min-width: 200px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  color: #b40028;
+  background-color: transparent;
+  transition: all .25s ease-in-out;
+  margin: 10px 0px 10px 0px;
+
+}
+
+.site-btn:hover {
+  background: #b40028;
+  border: 1px solid #fff;
+  font-weight: 700px;
+
+
+}
+
+/* Social Icons */
+
+.social-icons {
+
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+.social {
+  margin: 7px 7px 7px 0px;
+  color: #232323;
+}
+
+
+#social-fb:hover {
+  color: #3B5998;
+  transition: all .25s;
+}
+
+#social-tw:hover {
+  color: #4099FF;
+  transition: all .25s;
+}
+
+#social-gp:hover {
+  color: #d34836;
+  transition: all .25s;
+}
+
+#social-em:hover {
+  color: #f39c12;
+  transition: all .25s;
+}
+
+
+/* Site Heading */
+.site-heading h3 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.border {
+  background: #e1e1e1;
+  height: 1px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+}
+
+.paddingTB60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.image-aboutus-banner {
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("assets/images/2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.image-aboutus-sm-banner {
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("assets/images/2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.lg-text {
+  font-size: 52px;
+  font-weight: 600;
+  text-transform: none;
+  color: #fff;
+}
+
+.image-aboutus-para {
+  color: #fff;
+}
+
+
+
+.body {
+  background: linear-gradient(-45deg, #444444, #0e0e0e, #273135, #0b0e0d);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  font-family: 'Poppins';
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.contact {
+  margin: 20px;
+}
+
+
+.contact .dbox:hover {
+  background: #cc1616;
+  color: white;
+  /* padding: 30px 30px 70px 30px; */
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  transition: box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease;
+}
+
+
+.dbox:hover .icon{
+  background-color: white;
+  color: #cc1616;
+  width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: auto auto;
+    margin-bottom: 20px;
+    display: block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.dbox:hover a{
+  color: white;
+}
+
+.form-control{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+
+form:hover{
+  /* background-color: white; */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.nav-link{
+
+  /* color: white !important;; */
+}
+
+select.form-control:not([size]):not([multiple]) {
+  height: calc(4rem + 2px)!important;
+}
+
+
+.carousel{
+  /* margin-top: 50px; */
+}
+.carousel-inner1{
+  height: 100px;
+}
+.carousel-caption{
+  /* color: #fff; */
+  top: 50%;
+}
+
+
+@media only screen and (max-width: 1080px) and (min-width: 200px)  {
+
+  .carousel-inner{
+    height: 400px;
+  }
+}
+
+
+
+h3{
+  color:black
+}
+
+.carousel-control-prev-icon{
+  background-image:url("../images/left-arrow.png")
+}
+
+.carousel-control-next-icon{
+  background-image:url("../images/right-arrow.png")
+}
+
+
+.fa {
+  color: white;
+}
+.fa {
+  padding-right: 10px;
+}
