@@ -1,0 +1,96 @@
+{% load static %}
+<div class="container-fluid">
+    <nav
+      class="navbar navbar-expand-lg navbar-light  d-flex justify-content-between"
+    >
+      <a class="navbar-brand" href="#">
+        <img
+          src="{% static 'images/ride.png' %}"
+          class="logo"
+          style="width: 130px"
+      /></a>
+      <div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            
+            {% if user.is_authenticated %}
+            <li class="nav-item active">
+              <a class="nav-link" href="http://127.0.0.1:3000/">Home </a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="http://127.0.0.1:3000/aboutus">About Us </a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="http://127.0.0.1:3000/contactus">Contact Us </a>
+            </li>
+
+
+            {% if is_rider %}
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:8000/searchRides">ShowRides</a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:3000/schedule">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/rideRequest">ShowRequests</a>
+            </li>
+            {% endif %}
+
+
+            {% endif %}
+          </ul>
+
+
+          <div class="dropdown">
+            {% if Notifications %}
+            <div style="position: relative;margin-right: 15px;">
+            <i class="fa fa-bell " style="font-size:20px; color:rgb(183, 38, 38);"></i>
+            <span class="badge badge-pill badge-danger" style="margin-left: -12px;position:absolute;">{{Notifications.count}}</span>
+          </div>
+            {% else %}
+              <i class="fa fa-bell " style="font-size:20px; color:rgb(53, 49, 49);"></i>
+            {% endif %}
+            <div class="dropdown-content" style="z-index: 9999;height: 200px;overflow: auto;">
+              {% for notification in Notifications %}
+              <a href="#"><i class="fa fa-bell-o" style="color:white;"> &nbsp;{{notification.message}}</i> </a>
+              {% endfor %}
+              <form method="POST" action="{% url 'clear_notifications' %}">
+                {% csrf_token %}
+                <input type="hidden" name="user" value="{{user.id}}"/>
+                <input type="hidden" name="url" value="{{ request.build_absolute_uri }}"/>
+              <button class="btn btn-primary" type="submit" width="100%">Clear All</button>
+              </form>
+            </div>
+          </div>
+        {% if user.is_authenticated %}
+        <div class="btn btn-primary">
+            <a href="http://127.0.0.1:3000/signin" style="color: #f8f9fa;font-size: 14px;">Log Out</a>
+        </div>
+        {% else %}
+        <div class="btn btn-primary">
+            <a href="http://localhost:3000/signin" style="color: #f8f9fa">Log In</a>
+        </div>
+        {% endif %}
+        <div class='btn btn-primary' style="margin-left: 10px;">
+         Mode
+        </div>
+        </div>
+      </div>
+    </nav>
+  </div>
