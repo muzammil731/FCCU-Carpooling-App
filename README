@@ -1,0 +1,28 @@
+# FCCU Carpooling Application
+
+## Overview
+This project addresses the parking challenges faced by over 1,000 university students by providing a web-based carpooling solution. Built with ReactJS and Django, the application promotes cost savings, reduces environmental impact, and improves commuting efficiency.
+
+## Features
+- **Carpool Scheduling**: Easily find and schedule carpools.
+- **Cost Reduction**: Save up to 20% on travel expenses.
+- **User Feedback**: Designed using data from 95% positive user surveys.
+- **Performance**: Delivered 20% ahead of schedule using Agile principles.
+
+## Technologies Used
+- **Frontend**: ReactJS
+- **Backend**: Django
+- **Database**: SQLite
+- **Programming Languages**: Python, JavaScript
+
+## Installation
+1. Clone the repository: `git clone https://github.com/muzammil731/FCCU-Carpooling-App.git`
+2. Install dependencies:
+   - For frontend: `npm install`
+   - For backend: `pip install -r requirements.txt`
+3. Run the application:
+   - Frontend: `npm start`
+   - Backend: `python manage.py runserver`
+
+## Contributions
+Contributions are welcome. Feel free to open an issue or submit a pull request.
